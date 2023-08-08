@@ -1,0 +1,135 @@
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* nav */
+    nav div {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .nav-form input {
+        outline: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
+    
+    .search_icon {
+        position: absolute;
+        right: 1.9rem;
+        bottom: 1.8rem;
+    }
+    /* bodydiv */
+    .bodydiv div {
+        width: max-content;
+    }
+    .main_img {
+        height: 350px;
+        margin-bottom: 0;
+    }
+    .hiking{
+        letter-spacing: 5px;
+    }
+    .bodypara {
+        display: none;
+    }
+    /* body 2 */
+    .body2-div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+    .body2-div2 .card {
+        margin-bottom: 1rem;
+    }
+    .card:hover {
+        box-shadow: 0px 0px 8px 5px #888;
+        transform: rotate(1deg);
+        transition: all 1s;
+    }
+    
+    .card:hover img {
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
+
+    /* body 3 */
+    .body3{
+        margin-top: 58rem;
+        width: 100%;
+        height: 125vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+    }
+    .body3 div{
+        width: 100%;
+    }
+    /* .body3div1{
+        display: none;
+    }
+    .body3div2{
+        width: max-content;
+        margin: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+    } */
+    /* body 4 */
+    .body4 {
+        height: 20rem;
+    }
+
+    .body4 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .body4 div {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+
+    }
+
+    .body4 div h1 {
+        text-align: end;
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 0.5rem;
+    }
+    /* body5 */
+    .body5 {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        height: 14rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .body5 p{
+        font-size: 25px;
+    }
+    /* footer */
+    .footer {
+        display: flex;
+        flex-direction: column;
+    
+        .location {
+            width: 100%;
+            height: 100%;
+            color: white;
+            line-height: 2.5rem;
+        }
+    
+        .footcol {
+            border-top: 1px solid white;
+            padding-top: 1.5rem;
+            width: 100%;
+            font-size: 15px;
+            line-height: 1.8rem;
+        }
+    }
+}

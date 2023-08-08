@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+
+/* navstyling */
+nav {
+    position: fixed;
+    top: 0;
+}
+
+nav div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-form input {
+    outline: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+
+.search_icon {
+    position: absolute;
+    right: 1.9rem;
+    bottom: 1.8rem;
+}
+
+/* navstyle end */
+
+
+/* main img */
+.main_img {
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 550px;
+}
+
+.bodydiv {
+    position: relative;
+    margin-bottom: 0rem;
+}
+
+.bodydiv div {
+    width: fit-content;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+}
+.hiking{
+    font-weight: 900;
+    color: goldenrod;
+}
+
+/* body 2 */
+.body2 {
+    height: 90vh;
+}
+
+.body2>div:nth-child(1) {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.body2>div:nth-child(1) h2{
+    color: rgb(199, 151, 30);
+}
+
+.body2>div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+}
+.body2-div3{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.body2-div3 button{
+    border: none;
+    background-color: rgb(97, 80, 36);
+    color: white;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.card .card-body{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgb(97, 80, 36);
+    color: white;
+}
+.card img {
+    height: 15rem;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 8px 5px #888;
+    transform: rotate(1deg);
+    transition: all 1s;
+}
+
+.card:hover img {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+/* body 3 */
+.body3 {
+    overflow-x: hidden;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    height: 68vh;
+}
+
+.body3 div {
+    width: 50%;
+    height: 100%;
+}
+
+.body3 div img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 2px;
+}
+
+.body3 div img:hover {
+    transform: scale(1.01, 1.01);
+    transition: all 0.3s;
+}
+
+.body3div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: rgb(97, 80, 36);
+    color: white;
+}
+
+.body3div2:hover {
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px;
+}
+
+.body3div2 button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* body 4 */
+.body4 {
+    margin-top: 1rem;
+    height: 65vh;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.body4 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.body4 div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    text-align: center;
+}
+
+.body4 div h1 {
+    font-weight: 800;
+    font-style: italic;
+    text-align: end;
+    font-size: 60px;
+    letter-spacing: 0.5rem;
+}
+.body4 div h1 span{
+    color: goldenrod;
+}
+
+/* body 5 */
+.body5 {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    height: 50vh;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    /* background-image: url("nature-yuh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%; */
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    /* font-family: cursive; */
+    letter-spacing: 0.5rem;
+}
+
+.footer {
+    height: max-content;
+    background-color: rgb(97, 80, 36);
+    padding: 1.5rem;
+    cursor: context-menu;
+    display: flex;
+
+    .location {
+        width: 45%;
+        height: 100%;
+        color: white;
+        line-height: 2rem;
+    }
+
+    .social {
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .footcol {
+        width: 55%;
+        color: white;
+    }
+
+    .col a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .col a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    nav div {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    /* .bodydiv */
+    .bodydiv {
+        margin-bottom: 2rem;
+    }
+
+    .bodydiv div {
+        width: max-content;
+    }
+
+    .main_img {
+        height: 300px;
+        margin-bottom: 0;
+    }
+    .hiking{
+        letter-spacing: 5px;
+    }
+
+    .bodypara {
+        display: none;
+    }
+
+    /* .body2 */
+    .body2{
+        margin-bottom: 0;
+    }
+    .body2-div1>p {
+        display: none;
+    }
+
+    .body2-div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        overflow: hidden;
+        /* margin-bottom: 3rem; */
+    }
+
+    .body2-div2 .card {
+        margin-bottom: 1rem;
+    }
+    .card:hover {
+        box-shadow: 0px 0px 8px 5px #888;
+        transform: rotate(1deg);
+        transition: all 1s;
+    }
+    
+    .card:hover img {
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
+    .body2-div3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .body3 */
+    .body3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 51rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 100vh;
+
+    }
+    .body3 div{
+        width: 100%;
+    }
+
+    /* body 4 */
+    .body4 {
+        /* margin-top: 5rem; */
+        height: 20rem;
+        position: relative;
+        padding: 0;
+    }
+    .body4 div {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        text-align: center;
+    }
+    
+    .body4 div h1 {
+        font-weight: 800;
+        font-style: italic;
+        text-align: end;
+        font-size: 30px;
+        letter-spacing: 0.5rem;
+    }
+
+    
+    /* body5 */
+    .body5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .body5 p{
+        font-size: 23px;
+    }
+
+    /* footer */
+    .footer {
+        display: flex;
+        flex-direction: column;
+    
+        .location {
+            width: 100%;
+            height: 100%;
+            color: white;
+            line-height: 2.5rem;
+        }
+    
+        .footcol {
+            display: none;
+            border-top: 1px solid white;
+            padding-top: 1.5rem;
+            width: 100%;
+            font-size: 15px;
+            line-height: 1.8rem;
+        }
+    }   
+}
+
+
+
