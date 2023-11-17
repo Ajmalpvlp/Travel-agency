@@ -59,7 +59,7 @@
     <div class="bodydiv" data-aos="fade-up" data-aos-duration="1000">
         <img class="main_img" src="Travel-Backpack og.jpg" alt="">
         <div>
-            <h1 class="hiking lh-1">IT'S TIME <br> FOR HIKING </h1>
+            <h1 class="hiking lh-1">IT'S TIME <br> FOR <span class="frhk"> HIKING </span></h1>
             <span class="fs-6 fw-medium fst-italic">EXPLORE THE WORLD</span><br><br>
             <button class="btn btn-sm btn-light fw-bold border-1 rounded-pill px-3 mb-3">READ MORE</button><br>
             <span class="bodypara fst-italic">Traveling broadens horizons, fosters cultural understanding, and creates <br> cherished
@@ -196,6 +196,27 @@
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+        // Wrap every letter in a span
+            var textWrapper = document.querySelector('.frhk');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+            anime.timeline({loop: true})
+            .add({
+                targets: '.frhk .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i+1)
+            }).add({
+                targets: '.frhk',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+        </script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
