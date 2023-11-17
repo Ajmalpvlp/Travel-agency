@@ -54,6 +54,7 @@ nav div {
     left: 10%;
 }
 .hiking{
+    font-size: 5.5rem;
     font-weight: 900;
     color: goldenrod;
 }
@@ -272,6 +273,7 @@ nav div {
     }
     .hiking{
         letter-spacing: 5px;
+        font-size: 2rem;
     }
 
     .bodypara {
